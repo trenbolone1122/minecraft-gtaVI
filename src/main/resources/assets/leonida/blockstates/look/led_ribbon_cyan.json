@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=north,vertical=false": {
+   "model": "leonida:block/look/led_ribbon_cyan"
+  },
+  "facing=north,vertical=true": {
+   "model": "leonida:block/look/led_ribbon_cyan_vertical"
+  },
+  "facing=east,vertical=false": {
+   "model": "leonida:block/look/led_ribbon_cyan",
+   "y": 90
+  },
+  "facing=east,vertical=true": {
+   "model": "leonida:block/look/led_ribbon_cyan_vertical",
+   "y": 90
+  },
+  "facing=south,vertical=false": {
+   "model": "leonida:block/look/led_ribbon_cyan",
+   "y": 180
+  },
+  "facing=south,vertical=true": {
+   "model": "leonida:block/look/led_ribbon_cyan_vertical",
+   "y": 180
+  },
+  "facing=west,vertical=false": {
+   "model": "leonida:block/look/led_ribbon_cyan",
+   "y": 270
+  },
+  "facing=west,vertical=true": {
+   "model": "leonida:block/look/led_ribbon_cyan_vertical",
+   "y": 270
+  }
+ }
+}

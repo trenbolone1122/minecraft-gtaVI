@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/outer_stairs",
+ "textures": {
+  "bottom": "leonida:block/look/concrete",
+  "top": "leonida:block/look/concrete",
+  "side": "leonida:block/look/concrete"
+ }
+}

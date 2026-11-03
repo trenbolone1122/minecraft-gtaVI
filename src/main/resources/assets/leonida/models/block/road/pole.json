@@ -1,0 +1,5 @@
+{"parent":"minecraft:block/block","textures":{"particle":"leonida:block/road/pole_metal","s":"leonida:block/road/pole_metal"},
+ "elements":[{"from":[5.5,0,5.5],"to":[10.5,16,10.5],"faces":{
+  "north":{"uv":[5.5,0,10.5,16],"texture":"#s"},"south":{"uv":[5.5,0,10.5,16],"texture":"#s"},
+  "east":{"uv":[5.5,0,10.5,16],"texture":"#s"},"west":{"uv":[5.5,0,10.5,16],"texture":"#s"},
+  "up":{"uv":[5.5,5.5,10.5,10.5],"texture":"#s","cullface":"up"},"down":{"uv":[5.5,5.5,10.5,10.5],"texture":"#s","cullface":"down"}}}]}

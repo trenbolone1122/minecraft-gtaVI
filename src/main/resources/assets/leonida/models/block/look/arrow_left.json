@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "top": "leonida:block/look/arrow_left",
+  "side": "leonida:block/look/asphalt",
+  "bottom": "leonida:block/look/asphalt"
+ }
+}

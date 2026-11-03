@@ -1,0 +1,22 @@
+{
+  "itemGroup.leonida.leonida": "Leonida",
+  "key.leonida.character_switch": "Switch character",
+  "key.category.leonida.character": "Leonida: Characters",
+  "block.leonida.character.wardrobe": "Wardrobe",
+  "character.leonida.name.jason": "Jason",
+  "character.leonida.name.lucia": "Lucia",
+  "character.leonida.wardrobe": "Wardrobe",
+  "character.leonida.wardrobe.title": "Wardrobe: %s",
+  "character.leonida.wardrobe.wear": "Wear",
+  "character.leonida.switch.denied_wanted": "You cannot switch while the cops are on you",
+  "character.leonida.switch.failed": "Cannot switch character right now",
+  "character.leonida.outfit.unknown": "No such outfit for this character",
+  "character.leonida.outfit.jason.everyday": "Tank top and jeans",
+  "character.leonida.outfit.jason.heist": "Heist: bandana and cargos",
+  "character.leonida.outfit.jason.swim": "Keys: shirtless and camo shorts",
+  "character.leonida.outfit.jason.casual": "White tee and shorts",
+  "character.leonida.outfit.lucia.everyday": "Black tank and light jeans",
+  "character.leonida.outfit.lucia.heist": "Heist: red bandana",
+  "character.leonida.outfit.lucia.swim": "Bikini and shades",
+  "character.leonida.outfit.lucia.jumpsuit": "Corrections jumpsuit"
+}

@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/coral_stone"
+   },
+   {
+    "model": "leonida:block/look/coral_stone",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/coral_stone",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/coral_stone",
+    "y": 270
+   }
+  ]
+ }
+}

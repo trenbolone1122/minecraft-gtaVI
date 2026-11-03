@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/outer_stairs",
+ "textures": {
+  "bottom": "leonida:block/look/tropical_fabric",
+  "top": "leonida:block/look/tropical_fabric",
+  "side": "leonida:block/look/tropical_fabric"
+ }
+}

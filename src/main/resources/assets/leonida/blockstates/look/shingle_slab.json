@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "leonida:block/look/shingle_slab"
+  },
+  "type=top": {
+   "model": "leonida:block/look/shingle_slab_top"
+  },
+  "type=double": {
+   "model": "leonida:block/look/shingle"
+  }
+ }
+}

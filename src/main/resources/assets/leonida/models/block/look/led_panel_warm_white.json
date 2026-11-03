@@ -1,0 +1,49 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/led_panel_warm_white",
+  "t": "leonida:block/look/led_panel_warm_white"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#t",
+     "cullface": "north"
+    },
+    "south": {
+     "texture": "#t",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#t",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#t",
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#t",
+     "cullface": "up"
+    },
+    "down": {
+     "texture": "#t",
+     "cullface": "down"
+    }
+   },
+   "light_emission": 15,
+   "shade": false
+  }
+ ]
+}

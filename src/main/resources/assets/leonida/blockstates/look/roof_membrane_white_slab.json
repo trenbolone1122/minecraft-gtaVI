@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "leonida:block/look/roof_membrane_white_slab"
+  },
+  "type=top": {
+   "model": "leonida:block/look/roof_membrane_white_slab_top"
+  },
+  "type=double": {
+   "model": "leonida:block/look/roof_membrane_white"
+  }
+ }
+}

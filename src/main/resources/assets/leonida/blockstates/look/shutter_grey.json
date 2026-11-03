@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "leonida:block/look/shutter_grey"
+  },
+  "facing=east": {
+   "model": "leonida:block/look/shutter_grey",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "leonida:block/look/shutter_grey",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "leonida:block/look/shutter_grey",
+   "y": 270
+  }
+ }
+}

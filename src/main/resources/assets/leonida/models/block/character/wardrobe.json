@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "leonida:block/character/wardrobe_top",
+    "front": "leonida:block/character/wardrobe_front",
+    "side": "leonida:block/character/wardrobe_side"
+  }
+}

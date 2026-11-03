@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/cube_column",
+ "textures": {
+  "end": "leonida:block/look/weathered_wood_top",
+  "side": "leonida:block/look/weathered_wood"
+ }
+}

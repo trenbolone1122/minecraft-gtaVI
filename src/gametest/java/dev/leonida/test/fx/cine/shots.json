@@ -1,0 +1,1952 @@
+{
+  "_doc": "Cinematic capture shot list (fx test source set only, never ships). Shots named in 'run' are rendered by the fx client gametest (tools/gpu-test.sh fx) instead of the normal fx tests; leave 'run' empty for normal tests. Modes: free (keys = camera), follow (keys = vehicle route, camera behind), cockpit (keys = aircraft route, camera in the seat), boat (keys = boat route on the water, camera behind). Key fields: t (s), pos [x,y,z] (y above ground when relativeY) or site + uv [u along the landmark, v out of its front; negative v = street/ocean side for Ocean Drive hotels L25-L51] + y, yaw, pitch, fov (whole degrees: vanilla's FOV option is an integer, so animate it only in big moves). time = day time ticks (6000 noon, 11800 golden hour, 18000 night). snapToRoad: move key x to the centre of the nearest road. brightness: game brightness 0..1 (vanilla gamma option). dhRendering (top level, default true): Distant Horizons LODs on for the capture. exposure: post exposure in stops applied at encode (e.g. 0.7 for night). Extra key fields: view 'vc:<site>:<view>' or 'lm:<site>:<view>' (landmark camera preset; offset/lookOffset world deltas), look [x,y,z] (aim; y above ground when relativeY), lookUv [u,h,v] with site, absY true (key y absolute even when relativeY). preview (top level): render 3 quick stills per shot (10/50/90 %), no encode. Pop-in rules: every shot gets a warm-up flight along its path and a per-frame terrain gate (Sodium terrain complete, 2 s cap, capped frames logged); renderDistance 32 by default so DH only shows beyond loaded chunks. Mode thirdperson: the player (character jason|lucia, HD model) walks the key path with vanilla third-person camera at cameraDistance (3.5 on foot) and key pitch; with entity the player rides and drives that vehicle along the path (cameraDistance 6).",
+  "run": [],
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "crf": 16,
+  "dhRendering": false,
+  "output": "cine",
+  "shots": [
+    {
+      "name": "ocean-drive-golden-dolly",
+      "mode": "free",
+      "time": 11800,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L42",
+          "uv": [
+            -10,
+            -40
+          ],
+          "y": 7.0,
+          "yaw": 170,
+          "pitch": 7,
+          "fov": 66
+        },
+        {
+          "t": 1.75,
+          "site": "L40",
+          "uv": [
+            0,
+            -40
+          ],
+          "y": 9.0,
+          "yaw": 174,
+          "pitch": 8,
+          "fov": 66
+        },
+        {
+          "t": 3.5,
+          "site": "L39",
+          "uv": [
+            10,
+            -40
+          ],
+          "y": 11.0,
+          "yaw": 178,
+          "pitch": 9,
+          "fov": 66
+        }
+      ],
+      "outName": "02_ocean-drive-golden-dolly"
+    },
+    {
+      "name": "vice-beach-deco-night-aerial",
+      "mode": "free",
+      "time": 18000,
+      "duration": 7.0,
+      "renderDistance": 32,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            1820,
+            104,
+            -520
+          ],
+          "look": [
+            2060,
+            72,
+            -560
+          ],
+          "fov": 64
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            1832,
+            100,
+            -570
+          ],
+          "look": [
+            2060,
+            70,
+            -590
+          ],
+          "fov": 64
+        },
+        {
+          "t": 7,
+          "pos": [
+            1845,
+            96,
+            -620
+          ],
+          "look": [
+            2060,
+            68,
+            -620
+          ],
+          "fov": 64
+        }
+      ]
+    },
+    {
+      "name": "downtown-skyline-dusk",
+      "mode": "free",
+      "time": 12900,
+      "duration": 7.0,
+      "renderDistance": 32,
+      "exposure": 0.2,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            300,
+            120,
+            500
+          ],
+          "yaw": 88,
+          "pitch": 4,
+          "fov": 60
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            300,
+            120,
+            550
+          ],
+          "yaw": 90,
+          "pitch": 4,
+          "fov": 60
+        },
+        {
+          "t": 7,
+          "pos": [
+            300,
+            120,
+            600
+          ],
+          "yaw": 92,
+          "pitch": 4,
+          "fov": 60
+        }
+      ]
+    },
+    {
+      "name": "downtown-skyline-night",
+      "mode": "free",
+      "time": 18000,
+      "duration": 7.0,
+      "renderDistance": 32,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            300,
+            120,
+            500
+          ],
+          "yaw": 88,
+          "pitch": 4,
+          "fov": 60
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            300,
+            120,
+            550
+          ],
+          "yaw": 90,
+          "pitch": 4,
+          "fov": 60
+        },
+        {
+          "t": 7,
+          "pos": [
+            300,
+            120,
+            600
+          ],
+          "yaw": 92,
+          "pitch": 4,
+          "fov": 60
+        }
+      ]
+    },
+    {
+      "name": "ocean-drive-follow-car",
+      "mode": "follow",
+      "entity": "leonida:vehicle_dominator",
+      "driver": "minecraft:villager",
+      "follow": {
+        "back": 7.5,
+        "up": 2.6
+      },
+      "time": 6000,
+      "duration": 8.0,
+      "renderDistance": 32,
+      "relativeY": true,
+      "snapToRoad": true,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "site": "L45",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 8,
+          "fov": 72
+        },
+        {
+          "t": 4,
+          "site": "L42",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 8,
+          "fov": 72
+        },
+        {
+          "t": 8,
+          "site": "L36",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 8,
+          "fov": 72
+        }
+      ]
+    },
+    {
+      "name": "maverick-cockpit-vice-beach",
+      "mode": "cockpit",
+      "entity": "leonida:aircraft/maverick",
+      "time": 7000,
+      "duration": 8.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            2120,
+            112,
+            -600
+          ],
+          "pitch": 10,
+          "fov": 75
+        },
+        {
+          "t": 4,
+          "pos": [
+            1850,
+            108,
+            -610
+          ],
+          "pitch": 8,
+          "fov": 75
+        },
+        {
+          "t": 8,
+          "pos": [
+            1580,
+            104,
+            -620
+          ],
+          "pitch": 6,
+          "fov": 75
+        }
+      ],
+      "seat": [
+        -0.32,
+        1.7,
+        1.45
+      ]
+    },
+    {
+      "name": "maverick-nose-vice-beach",
+      "mode": "cockpit",
+      "entity": "leonida:aircraft/maverick",
+      "time": 12600,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            2120,
+            112,
+            -600
+          ],
+          "pitch": 30,
+          "fov": 75
+        },
+        {
+          "t": 4,
+          "pos": [
+            2010,
+            110,
+            -610
+          ],
+          "pitch": 28,
+          "fov": 75
+        },
+        {
+          "t": 8,
+          "pos": [
+            1900,
+            108,
+            -620
+          ],
+          "pitch": 26,
+          "fov": 75
+        }
+      ],
+      "seat": [
+        0,
+        1.3,
+        3.2
+      ],
+      "exposure": -0.6,
+      "outName": "12_maverick-nose-vice-beach"
+    },
+    {
+      "name": "seashark-bay-skyline",
+      "mode": "boat",
+      "entity": "leonida:vehicle_seashark",
+      "follow": {
+        "back": 6.5,
+        "up": 2.2
+      },
+      "time": 11600,
+      "duration": 7.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            700,
+            62.6,
+            -610
+          ],
+          "pitch": 4,
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            655,
+            62.6,
+            -614
+          ],
+          "pitch": 4,
+          "fov": 70
+        },
+        {
+          "t": 7,
+          "pos": [
+            610,
+            62.6,
+            -616
+          ],
+          "pitch": 4,
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "skyviews-wheel-night",
+      "mode": "free",
+      "time": 18000,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L438",
+          "uv": [
+            -16,
+            -48
+          ],
+          "y": 1.8,
+          "lookUv": [
+            0,
+            28,
+            0
+          ],
+          "fov": 70
+        },
+        {
+          "t": 1.75,
+          "site": "L438",
+          "uv": [
+            -3,
+            -48
+          ],
+          "y": 2.0,
+          "lookUv": [
+            0,
+            28,
+            0
+          ],
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "site": "L438",
+          "uv": [
+            10,
+            -48
+          ],
+          "y": 2.4,
+          "lookUv": [
+            0,
+            28,
+            0
+          ],
+          "fov": 70
+        }
+      ],
+      "outName": "10_skyviews-wheel-night"
+    },
+    {
+      "name": "lifeguard-tower-sunset",
+      "mode": "free",
+      "time": 12300,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "exposure": 0.2,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L376",
+          "uv": [
+            -26,
+            -30
+          ],
+          "y": 4.0,
+          "lookUv": [
+            0,
+            4,
+            0
+          ],
+          "fov": 66
+        },
+        {
+          "t": 1.75,
+          "site": "L376",
+          "uv": [
+            -14,
+            -26
+          ],
+          "y": 3.4,
+          "lookUv": [
+            0,
+            4,
+            0
+          ],
+          "fov": 66
+        },
+        {
+          "t": 3.5,
+          "site": "L376",
+          "uv": [
+            -4,
+            -21
+          ],
+          "y": 3.0,
+          "lookUv": [
+            0,
+            4.5,
+            0
+          ],
+          "fov": 66
+        }
+      ],
+      "outName": "05_lifeguard-tower-sunset"
+    },
+    {
+      "name": "starlet-motel-sign-night",
+      "mode": "free",
+      "time": 18000,
+      "duration": 7.0,
+      "renderDistance": 32,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "view": "lm:starlet_motel:photo",
+          "offset": [
+            0,
+            0,
+            -8
+          ],
+          "fov": 70
+        },
+        {
+          "t": 7,
+          "view": "lm:starlet_motel:photo",
+          "offset": [
+            0,
+            1,
+            0
+          ],
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "jason-house-golden",
+      "mode": "free",
+      "time": 11800,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "lm:jason_house:photo",
+          "offset": [
+            -4,
+            0.4,
+            5
+          ],
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "view": "lm:jason_house:photo",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "fov": 70
+        }
+      ],
+      "outName": "04_jason-house-golden"
+    },
+    {
+      "name": "jason-ocean-drive-walk-3p",
+      "mode": "thirdperson",
+      "character": "jason",
+      "time": 11800,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L42",
+          "uv": [
+            -4,
+            -42
+          ],
+          "y": 0,
+          "pitch": 12,
+          "fov": 70
+        },
+        {
+          "t": 1.75,
+          "site": "L42",
+          "uv": [
+            0,
+            -42
+          ],
+          "y": 0,
+          "pitch": 12,
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "site": "L42",
+          "uv": [
+            4,
+            -42
+          ],
+          "y": 0,
+          "pitch": 12,
+          "fov": 70
+        }
+      ],
+      "outName": "03_jason-ocean-drive-walk-3p"
+    },
+    {
+      "name": "lucia-vice-beach-neon-night-3p",
+      "mode": "thirdperson",
+      "character": "lucia",
+      "time": 18000,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L36",
+          "uv": [
+            -4,
+            -34
+          ],
+          "y": 0,
+          "pitch": 10,
+          "fov": 70
+        },
+        {
+          "t": 1.75,
+          "site": "L36",
+          "uv": [
+            0,
+            -34
+          ],
+          "y": 0,
+          "pitch": 10,
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "site": "L36",
+          "uv": [
+            4,
+            -34
+          ],
+          "y": 0,
+          "pitch": 10,
+          "fov": 70
+        }
+      ],
+      "outName": "11_lucia-vice-beach-neon-night-3p"
+    },
+    {
+      "name": "player-car-ocean-drive-3p",
+      "mode": "thirdperson",
+      "character": "jason",
+      "entity": "leonida:vehicle_dominator",
+      "cameraDistance": 6.0,
+      "time": 9000,
+      "duration": 8.0,
+      "renderDistance": 32,
+      "relativeY": true,
+      "snapToRoad": true,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "site": "L45",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 10,
+          "fov": 72
+        },
+        {
+          "t": 4,
+          "site": "L42",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 10,
+          "fov": 72
+        },
+        {
+          "t": 8,
+          "site": "L36",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 10,
+          "fov": 72
+        }
+      ]
+    },
+    {
+      "name": "seashark-bay-3p",
+      "mode": "thirdperson",
+      "character": "lucia",
+      "entity": "leonida:vehicle_seashark",
+      "cameraDistance": 5.0,
+      "time": 11600,
+      "duration": 7.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            700,
+            62.6,
+            -610
+          ],
+          "pitch": 8,
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            655,
+            62.6,
+            -614
+          ],
+          "pitch": 8,
+          "fov": 70
+        },
+        {
+          "t": 7,
+          "pos": [
+            610,
+            62.6,
+            -616
+          ],
+          "pitch": 8,
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "cop-chase-ocean-drive",
+      "outName": "06_cop-chase-ocean-drive",
+      "mode": "follow",
+      "entity": "leonida:vehicle_dominator",
+      "driver": "minecraft:villager",
+      "follow": {
+        "back": 32,
+        "up": 8
+      },
+      "ease": false,
+      "time": 6000,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "snapToRoad": true,
+      "lodWaitSeconds": 0,
+      "chasers": [
+        {
+          "entity": "leonida:vehicle_police_cruiser",
+          "lag": 0.3,
+          "side": -1.5
+        },
+        {
+          "entity": "leonida:vehicle_police_suv",
+          "lag": 0.55,
+          "side": 2.0
+        },
+        {
+          "entity": "leonida:vehicle_buffalo_police",
+          "lag": 0.8,
+          "side": -1.5
+        }
+      ],
+      "keys": [
+        {
+          "t": 0,
+          "site": "L45",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 12,
+          "fov": 70
+        },
+        {
+          "t": 1.75,
+          "site": "L43",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 12,
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "site": "L41",
+          "uv": [
+            0,
+            -50
+          ],
+          "y": 0,
+          "pitch": 12,
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "lucia-gunfire-neon-night-3p",
+      "outName": "07_lucia-gunfire-neon-night-3p",
+      "mode": "thirdperson",
+      "character": "lucia",
+      "time": 18000,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "lodWaitSeconds": 0,
+      "fire": {
+        "gun": "rifle",
+        "from": 0.4,
+        "to": 3.3,
+        "pitchOffset": 0
+      },
+      "keys": [
+        {
+          "t": 0,
+          "site": "L36",
+          "uv": [
+            0,
+            -34
+          ],
+          "y": 0,
+          "lookUv": [
+            -8,
+            5,
+            0
+          ],
+          "fov": 70
+        },
+        {
+          "t": 1.75,
+          "site": "L36",
+          "uv": [
+            0,
+            -34
+          ],
+          "y": 0,
+          "lookUv": [
+            0,
+            5,
+            0
+          ],
+          "fov": 70
+        },
+        {
+          "t": 3.5,
+          "site": "L36",
+          "uv": [
+            0,
+            -34
+          ],
+          "y": 0,
+          "lookUv": [
+            8,
+            5,
+            0
+          ],
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "sahara-arena-night-orbit",
+      "outName": "08_sahara-arena-night-orbit",
+      "mode": "free",
+      "time": 18000,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "lodWaitSeconds": 0,
+      "orbit": {
+        "site": "L187",
+        "radius": 125,
+        "height": 110,
+        "lookHeight": 0,
+        "fromDeg": -20,
+        "toDeg": 15,
+        "fov": 62
+      }
+    },
+    {
+      "name": "fleeca-field-night-orbit",
+      "outName": "09_fleeca-field-night-orbit",
+      "mode": "free",
+      "time": 18000,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "duration": 3.5,
+      "renderDistance": 32,
+      "relativeY": true,
+      "lodWaitSeconds": 0,
+      "orbit": {
+        "site": "L196",
+        "radius": 150,
+        "height": 120,
+        "lookHeight": 0,
+        "fromDeg": -25,
+        "toDeg": 10,
+        "fov": 62
+      }
+    },
+    {
+      "name": "downtown-birdseye-day",
+      "outName": "01_downtown-birdseye-day",
+      "mode": "free",
+      "time": 9500,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            40,
+            150,
+            -200
+          ],
+          "look": [
+            -400,
+            0,
+            -235
+          ],
+          "fov": 62
+        },
+        {
+          "t": 1.75,
+          "pos": [
+            15,
+            147.5,
+            -202
+          ],
+          "look": [
+            -400,
+            0,
+            -235
+          ],
+          "fov": 62
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            -10,
+            145,
+            -205
+          ],
+          "look": [
+            -400,
+            0,
+            -235
+          ],
+          "fov": 62
+        }
+      ],
+      "_doc": "DH off: camera over the inner bay, towers on the west shore 280-420 m away, tilted ~20 deg so the horizon sits behind the towers"
+    },
+    {
+      "name": "keys-bridge-aerial-day",
+      "outName": "13_keys-bridge-aerial-day",
+      "mode": "free",
+      "time": 6000,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "_doc": "longest Keys bridge from road data: highway over water (-5868,6920) -> (-5092,7174), 816 m; old parallel bridge to the south",
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            -5743,
+            160,
+            6930
+          ],
+          "look": [
+            -5643,
+            63,
+            6994
+          ],
+          "fov": 66
+        },
+        {
+          "t": 1.75,
+          "pos": [
+            -5704,
+            160,
+            6942
+          ],
+          "look": [
+            -5604,
+            63,
+            7006
+          ],
+          "fov": 66
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            -5665,
+            160,
+            6955
+          ],
+          "look": [
+            -5565,
+            63,
+            7019
+          ],
+          "fov": 66
+        }
+      ]
+    },
+    {
+      "name": "keys-islands-golden",
+      "outName": "14_keys-islands-golden",
+      "mode": "free",
+      "time": 11800,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "_doc": "low pass over the small palm islands and shallows north of the long Keys bridge, bridge in the background (south)",
+      "keys": [
+        {
+          "t": 0,
+          "pos": [
+            -5830,
+            78,
+            6640
+          ],
+          "look": [
+            -5800,
+            63,
+            6950
+          ],
+          "fov": 64
+        },
+        {
+          "t": 1.75,
+          "pos": [
+            -5800,
+            78,
+            6645
+          ],
+          "look": [
+            -5775,
+            63,
+            6950
+          ],
+          "fov": 64
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            -5770,
+            78,
+            6650
+          ],
+          "look": [
+            -5750,
+            63,
+            6950
+          ],
+          "fov": 64
+        }
+      ]
+    },
+    {
+      "name": "brians-marina-day",
+      "outName": "15_brians-marina-day",
+      "mode": "free",
+      "time": 10500,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "lm:brians_marina:aerial",
+          "offset": [
+            -14,
+            4,
+            10
+          ],
+          "fov": 66
+        },
+        {
+          "t": 3.5,
+          "view": "lm:brians_marina:aerial",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "fov": 66
+        }
+      ]
+    },
+    {
+      "name": "t60-01-keys-islands-sunrise",
+      "outName": "T01_keys-islands-sunrise",
+      "mode": "free",
+      "time": 23600,
+      "weather": "clear",
+      "duration": 4.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "pos": [
+            -5845,
+            74,
+            6630
+          ],
+          "look": [
+            -5815,
+            63,
+            6950
+          ],
+          "fov": 64
+        },
+        {
+          "t": 4.5,
+          "pos": [
+            -5765,
+            70,
+            6655
+          ],
+          "look": [
+            -5745,
+            63,
+            6950
+          ],
+          "fov": 64
+        }
+      ]
+    },
+    {
+      "name": "t60-02-keys-bridge-noon",
+      "outName": "T02_keys-bridge-noon",
+      "mode": "free",
+      "time": 6000,
+      "weather": "clear",
+      "duration": 4.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "pos": [
+            -5743,
+            160,
+            6930
+          ],
+          "look": [
+            -5643,
+            63,
+            6994
+          ],
+          "fov": 66
+        },
+        {
+          "t": 2.25,
+          "pos": [
+            -5704,
+            160,
+            6942
+          ],
+          "look": [
+            -5604,
+            63,
+            7006
+          ],
+          "fov": 66
+        },
+        {
+          "t": 4.5,
+          "pos": [
+            -5665,
+            160,
+            6955
+          ],
+          "look": [
+            -5565,
+            63,
+            7019
+          ],
+          "fov": 66
+        }
+      ]
+    },
+    {
+      "name": "t60-03-jason-house-golden",
+      "outName": "T03_jason-house-golden",
+      "mode": "free",
+      "time": 11800,
+      "weather": "clear",
+      "duration": 5.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "lm:jason_house:photo",
+          "offset": [
+            -3,
+            0.6,
+            6
+          ],
+          "fov": 70
+        },
+        {
+          "t": 5.0,
+          "view": "lm:jason_house:photo",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "t60-04-jason-intro-3p-front",
+      "outName": "T04_jason-intro-3p-front",
+      "mode": "3p-front",
+      "time": 9000,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "character": "jason",
+      "relativeY": true,
+      "cameraDistance": 3.2,
+      "ease": false,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L42",
+          "uv": [
+            -4,
+            -42
+          ],
+          "y": 0,
+          "pitch": 0,
+          "fov": 60
+        },
+        {
+          "t": 3.5,
+          "site": "L42",
+          "uv": [
+            4,
+            -42
+          ],
+          "y": 0,
+          "pitch": 0,
+          "fov": 60
+        }
+      ]
+    },
+    {
+      "name": "t60-05-brians-marina-front",
+      "outName": "T05_brians-marina-front",
+      "mode": "free",
+      "time": 9500,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "lm:brians_marina:photo",
+          "offset": [
+            0,
+            1,
+            -6
+          ],
+          "fov": 34
+        },
+        {
+          "t": 3.0,
+          "view": "lm:brians_marina:photo",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "fov": 34
+        }
+      ]
+    },
+    {
+      "name": "t60-06-starlet-motel-dusk",
+      "outName": "T06_starlet-motel-dusk",
+      "mode": "free",
+      "time": 12900,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "brightness": 0.9,
+      "exposure": 0.2,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "lm:starlet_motel:photo",
+          "offset": [
+            0,
+            0,
+            -5
+          ],
+          "fov": 70
+        },
+        {
+          "t": 3.0,
+          "view": "lm:starlet_motel:photo",
+          "offset": [
+            0,
+            0.5,
+            0
+          ],
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "t60-07-downtown-birdseye-day",
+      "outName": "T07_downtown-birdseye-day",
+      "mode": "free",
+      "time": 9500,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "pos": [
+            40,
+            150,
+            -200
+          ],
+          "look": [
+            -400,
+            0,
+            -235
+          ],
+          "fov": 62
+        },
+        {
+          "t": 3.5,
+          "pos": [
+            -10,
+            145,
+            -205
+          ],
+          "look": [
+            -400,
+            0,
+            -235
+          ],
+          "fov": 62
+        }
+      ]
+    },
+    {
+      "name": "t60-08-shamal-downtown-pass",
+      "outName": "T08_shamal-downtown-pass",
+      "mode": "follow",
+      "time": 8000,
+      "weather": "clear",
+      "duration": 4.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "entity": "leonida:aircraft/shamal",
+      "ease": false,
+      "follow": {
+        "back": 24,
+        "up": 4
+      },
+      "keys": [
+        {
+          "t": 0.0,
+          "pos": [
+            -370,
+            135,
+            -260
+          ],
+          "pitch": 4,
+          "fov": 72
+        },
+        {
+          "t": 2.0,
+          "pos": [
+            -375,
+            132,
+            -470
+          ],
+          "pitch": 4,
+          "fov": 72
+        },
+        {
+          "t": 4.0,
+          "pos": [
+            -380,
+            130,
+            -680
+          ],
+          "pitch": 4,
+          "fov": 72
+        }
+      ],
+      "_doc": "chase camera behind the Shamal flying -z between Marina Blue (-495,-402) and the bay, Palaestra Tower (-452,-678) ahead"
+    },
+    {
+      "name": "t60-09-sahara-hq-front-tilt",
+      "outName": "T09_sahara-hq-front-tilt",
+      "mode": "free",
+      "time": 7000,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "vc:L232:front",
+          "lookOffset": [
+            0,
+            -35,
+            0
+          ],
+          "fov": 66
+        },
+        {
+          "t": 3.0,
+          "view": "vc:L232:front",
+          "lookOffset": [
+            0,
+            45,
+            0
+          ],
+          "fov": 66
+        }
+      ]
+    },
+    {
+      "name": "t60-10-palaestra-tower-front",
+      "outName": "T10_palaestra-tower-front",
+      "mode": "free",
+      "time": 7500,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "vc:L437:front",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "fov": 64
+        },
+        {
+          "t": 3.0,
+          "view": "vc:L437:front",
+          "offset": [
+            0,
+            4,
+            6
+          ],
+          "lookOffset": [
+            0,
+            8,
+            0
+          ],
+          "fov": 64
+        }
+      ]
+    },
+    {
+      "name": "t60-11-ocean-drive-deco-golden",
+      "outName": "T11_ocean-drive-deco-golden",
+      "mode": "free",
+      "time": 11800,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "relativeY": true,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L42",
+          "uv": [
+            -10,
+            -40
+          ],
+          "y": 7.0,
+          "yaw": 170,
+          "pitch": 7,
+          "fov": 66
+        },
+        {
+          "t": 1.75,
+          "site": "L40",
+          "uv": [
+            0,
+            -40
+          ],
+          "y": 9.0,
+          "yaw": 174,
+          "pitch": 8,
+          "fov": 66
+        },
+        {
+          "t": 3.5,
+          "site": "L39",
+          "uv": [
+            10,
+            -40
+          ],
+          "y": 11.0,
+          "yaw": 178,
+          "pitch": 9,
+          "fov": 66
+        }
+      ]
+    },
+    {
+      "name": "t60-12-lucia-intro-3p-front",
+      "outName": "T12_lucia-intro-3p-front",
+      "mode": "3p-front",
+      "time": 11000,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "character": "lucia",
+      "relativeY": true,
+      "cameraDistance": 3.2,
+      "ease": false,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L36",
+          "uv": [
+            -4,
+            -34
+          ],
+          "y": 0,
+          "pitch": 0,
+          "fov": 60
+        },
+        {
+          "t": 3.5,
+          "site": "L36",
+          "uv": [
+            4,
+            -34
+          ],
+          "y": 0,
+          "pitch": 0,
+          "fov": 60
+        }
+      ]
+    },
+    {
+      "name": "t60-13-lucia-car-door",
+      "outName": "T13_lucia-car-door",
+      "mode": "free",
+      "time": 11000,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "relativeY": true,
+      "ease": false,
+      "props": [
+        {
+          "entity": "leonida:vehicle_dominator",
+          "site": "L36",
+          "uv": [
+            14,
+            -38.5
+          ],
+          "y": 0
+        }
+      ],
+      "actors": [
+        {
+          "character": "lucia",
+          "prop": 0,
+          "board": 1.3,
+          "approach": 3.5
+        }
+      ],
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L36",
+          "uv": [
+            22,
+            -33
+          ],
+          "y": 1.6,
+          "lookUv": [
+            14,
+            1.0,
+            -37
+          ],
+          "fov": 55
+        },
+        {
+          "t": 3.0,
+          "site": "L36",
+          "uv": [
+            21,
+            -33.5
+          ],
+          "y": 1.5,
+          "lookUv": [
+            14,
+            1.0,
+            -37.5
+          ],
+          "fov": 55
+        }
+      ],
+      "_doc": "Lucia walks up the sidewalk to the parked Dominator (driver door faces the hotels), boards at 1.3 s: the front door swings (vehicle/door.ogg + start.ogg in the SFX layer)"
+    },
+    {
+      "name": "t60-14-beach-patrol-hq-sunset",
+      "outName": "T14_beach-patrol-hq-sunset",
+      "mode": "free",
+      "time": 12300,
+      "weather": "clear",
+      "duration": 3.5,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "exposure": 0.2,
+      "keys": [
+        {
+          "t": 0.0,
+          "view": "vc:L37:front",
+          "offset": [
+            0,
+            0,
+            0
+          ],
+          "fov": 62
+        },
+        {
+          "t": 3.5,
+          "view": "vc:L37:front",
+          "offset": [
+            3,
+            0.3,
+            3
+          ],
+          "fov": 62
+        }
+      ]
+    },
+    {
+      "name": "t60-15-lifeguard-tower-sunset",
+      "outName": "T15_lifeguard-tower-sunset",
+      "mode": "free",
+      "time": 12300,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "relativeY": true,
+      "exposure": 0.2,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L376",
+          "uv": [
+            -14,
+            -26
+          ],
+          "y": 3.4,
+          "lookUv": [
+            0,
+            4,
+            0
+          ],
+          "fov": 66
+        },
+        {
+          "t": 3.0,
+          "site": "L376",
+          "uv": [
+            -4,
+            -21
+          ],
+          "y": 3.0,
+          "lookUv": [
+            0,
+            4.5,
+            0
+          ],
+          "fov": 66
+        }
+      ]
+    },
+    {
+      "name": "t60-16-skyviews-wheel-night",
+      "outName": "T16_skyviews-wheel-night",
+      "mode": "free",
+      "time": 18000,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "relativeY": true,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L438",
+          "uv": [
+            -16,
+            -48
+          ],
+          "y": 1.8,
+          "lookUv": [
+            0,
+            28,
+            0
+          ],
+          "fov": 70
+        },
+        {
+          "t": 3.0,
+          "site": "L438",
+          "uv": [
+            10,
+            -48
+          ],
+          "y": 2.4,
+          "lookUv": [
+            0,
+            28,
+            0
+          ],
+          "fov": 70
+        }
+      ]
+    },
+    {
+      "name": "t60-17-sahara-arena-night",
+      "outName": "T17_sahara-arena-night",
+      "mode": "free",
+      "time": 18000,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "relativeY": true,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "orbit": {
+        "site": "L187",
+        "radius": 125,
+        "height": 110,
+        "lookHeight": 0,
+        "fromDeg": -20,
+        "toDeg": 5,
+        "fov": 62
+      }
+    },
+    {
+      "name": "t60-18-fleeca-field-night",
+      "outName": "T18_fleeca-field-night",
+      "mode": "free",
+      "time": 18000,
+      "weather": "clear",
+      "duration": 3.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "relativeY": true,
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "orbit": {
+        "site": "L196",
+        "radius": 150,
+        "height": 120,
+        "lookHeight": 0,
+        "fromDeg": -25,
+        "toDeg": 0,
+        "fov": 62
+      }
+    },
+    {
+      "name": "t60-19-jason-lucia-neon-finale",
+      "outName": "T19_jason-lucia-neon-finale",
+      "mode": "3p-front",
+      "time": 18000,
+      "weather": "clear",
+      "duration": 7.0,
+      "renderDistance": 32,
+      "lodWaitSeconds": 0,
+      "character": "jason",
+      "relativeY": true,
+      "cameraDistance": 4.5,
+      "ease": false,
+      "actors": [
+        {
+          "character": "lucia",
+          "side": -1.1
+        }
+      ],
+      "brightness": 1.0,
+      "exposure": 0.4,
+      "keys": [
+        {
+          "t": 0.0,
+          "site": "L36",
+          "uv": [
+            -2.5,
+            -34
+          ],
+          "y": 0,
+          "pitch": 0,
+          "fov": 58
+        },
+        {
+          "t": 7.0,
+          "site": "L36",
+          "uv": [
+            2.5,
+            -34
+          ],
+          "y": 0,
+          "pitch": 0,
+          "fov": 58
+        }
+      ],
+      "_doc": "both walk slowly toward the camera under the Vice Beach neon (Lucia on Jason's left), held; fade to black in assembly"
+    }
+  ],
+  "preview": false,
+  "persistDir": "/root/cine-out",
+  "trailer60": {
+    "_doc": "60 s trailer timeline used by tools/record-trailer.ps1: cut times in seconds (hard cuts); each shot renders its slot + 0.5 s, the assembly takes the slot from 0.25 s in",
+    "cuts": [
+      0,
+      4,
+      8,
+      12.5,
+      15.5,
+      18,
+      20.5,
+      23.5,
+      27,
+      29.5,
+      32,
+      35,
+      38,
+      40.5,
+      43.5,
+      46,
+      48.5,
+      51,
+      53.5,
+      60
+    ],
+    "shots": [
+      "t60-01-keys-islands-sunrise",
+      "t60-02-keys-bridge-noon",
+      "t60-03-jason-house-golden",
+      "t60-04-jason-intro-3p-front",
+      "t60-05-brians-marina-front",
+      "t60-06-starlet-motel-dusk",
+      "t60-07-downtown-birdseye-day",
+      "t60-08-shamal-downtown-pass",
+      "t60-09-sahara-hq-front-tilt",
+      "t60-10-palaestra-tower-front",
+      "t60-11-ocean-drive-deco-golden",
+      "t60-12-lucia-intro-3p-front",
+      "t60-13-lucia-car-door",
+      "t60-14-beach-patrol-hq-sunset",
+      "t60-15-lifeguard-tower-sunset",
+      "t60-16-skyviews-wheel-night",
+      "t60-17-sahara-arena-night",
+      "t60-18-fleeca-field-night",
+      "t60-19-jason-lucia-neon-finale"
+    ],
+    "sfx": [
+      {
+        "file": "vehicle/door.ogg",
+        "shot": 13,
+        "at": 1.3
+      },
+      {
+        "file": "vehicle/start.ogg",
+        "shot": 13,
+        "at": 2.1
+      },
+      {
+        "file": "aircraft/woosh.ogg",
+        "shot": 8,
+        "center": 1.75
+      }
+    ]
+  }
+}

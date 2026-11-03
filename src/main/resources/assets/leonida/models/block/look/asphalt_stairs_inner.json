@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/inner_stairs",
+ "textures": {
+  "bottom": "leonida:block/look/asphalt",
+  "top": "leonida:block/look/asphalt",
+  "side": "leonida:block/look/asphalt"
+ }
+}

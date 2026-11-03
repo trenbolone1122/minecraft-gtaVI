@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:block/cube_all",
+ "textures": {
+  "all": "leonida:block/look/siding_teal_weathered_1"
+ }
+}

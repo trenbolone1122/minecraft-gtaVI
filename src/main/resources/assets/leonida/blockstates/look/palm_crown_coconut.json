@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/palm_crown_coconut"
+   },
+   {
+    "model": "leonida:block/look/palm_crown_coconut",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/palm_crown_coconut",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/palm_crown_coconut",
+    "y": 270
+   }
+  ]
+ }
+}

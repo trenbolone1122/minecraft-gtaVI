@@ -1,0 +1,64 @@
+{
+ "variants": {
+  "facing=north,shift=0": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift0"
+  },
+  "facing=east,shift=0": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift0",
+   "y": 90
+  },
+  "facing=south,shift=0": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift0",
+   "y": 180
+  },
+  "facing=west,shift=0": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift0",
+   "y": 270
+  },
+  "facing=north,shift=1": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift1"
+  },
+  "facing=east,shift=1": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift1",
+   "y": 90
+  },
+  "facing=south,shift=1": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift1",
+   "y": 180
+  },
+  "facing=west,shift=1": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift1",
+   "y": 270
+  },
+  "facing=north,shift=2": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift2"
+  },
+  "facing=east,shift=2": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift2",
+   "y": 90
+  },
+  "facing=south,shift=2": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift2",
+   "y": 180
+  },
+  "facing=west,shift=2": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift2",
+   "y": 270
+  },
+  "facing=north,shift=3": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift3"
+  },
+  "facing=east,shift=3": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift3",
+   "y": 90
+  },
+  "facing=south,shift=3": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift3",
+   "y": 180
+  },
+  "facing=west,shift=3": {
+   "model": "leonida:block/look/palm_trunk_coconut_shift3",
+   "y": 270
+  }
+ }
+}

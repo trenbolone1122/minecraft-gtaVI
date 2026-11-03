@@ -1,0 +1,12 @@
+{
+ "parent": "minecraft:block/cube",
+ "textures": {
+  "particle": "leonida:block/look/siding_teal_faded_2",
+  "north": "leonida:block/look/siding_teal_faded_2",
+  "south": "leonida:block/look/panel_cream",
+  "east": "leonida:block/look/siding_teal_faded_0",
+  "west": "leonida:block/look/siding_teal_faded_1",
+  "up": "leonida:block/look/siding_teal_faded_2",
+  "down": "leonida:block/look/siding_teal_faded_2"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=north,vertical=false": {
+   "model": "leonida:block/look/neon_violet"
+  },
+  "facing=north,vertical=true": {
+   "model": "leonida:block/look/neon_violet_vertical"
+  },
+  "facing=east,vertical=false": {
+   "model": "leonida:block/look/neon_violet",
+   "y": 90
+  },
+  "facing=east,vertical=true": {
+   "model": "leonida:block/look/neon_violet_vertical",
+   "y": 90
+  },
+  "facing=south,vertical=false": {
+   "model": "leonida:block/look/neon_violet",
+   "y": 180
+  },
+  "facing=south,vertical=true": {
+   "model": "leonida:block/look/neon_violet_vertical",
+   "y": 180
+  },
+  "facing=west,vertical=false": {
+   "model": "leonida:block/look/neon_violet",
+   "y": 270
+  },
+  "facing=west,vertical=true": {
+   "model": "leonida:block/look/neon_violet_vertical",
+   "y": 270
+  }
+ }
+}

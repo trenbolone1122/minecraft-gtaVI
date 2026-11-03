@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/marble"
+   },
+   {
+    "model": "leonida:block/look/marble",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/marble",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/marble",
+    "y": 270
+   }
+  ]
+ }
+}

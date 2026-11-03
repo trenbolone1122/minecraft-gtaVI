@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "leonida:block/look/chain_link_fence"
+ }
+}

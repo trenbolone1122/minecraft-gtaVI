@@ -1,0 +1,37 @@
+{
+  "aircraft.propeller": {
+    "sounds": [
+      {
+        "name": "leonida:aircraft/propeller",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "aircraft.propeller_small": {
+    "sounds": [
+      {
+        "name": "leonida:aircraft/propeller_small",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "aircraft.rotor": {
+    "sounds": [
+      {
+        "name": "leonida:aircraft/propeller_tiny",
+        "attenuation_distance": 64,
+        "pitch": 0.6
+      }
+    ]
+  },
+  "aircraft.engine_start": {
+    "sounds": [
+      "leonida:aircraft/engine_start"
+    ]
+  },
+  "aircraft.wind": {
+    "sounds": [
+      "leonida:aircraft/woosh"
+    ]
+  }
+}

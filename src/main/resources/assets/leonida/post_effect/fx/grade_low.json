@@ -1,0 +1,226 @@
+{
+  "targets": {
+    "swap": {}
+  },
+  "passes": [
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "leonida:post/fx/grade",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:main"
+        },
+        {
+          "sampler_name": "Depth",
+          "target": "minecraft:main",
+          "use_depth_buffer": true
+        },
+        {
+          "sampler_name": "Bloom",
+          "target": "minecraft:main",
+          "bilinear": true
+        },
+        {
+          "sampler_name": "Ao",
+          "target": "minecraft:main",
+          "bilinear": true
+        }
+      ],
+      "output": "swap",
+      "uniforms": {
+        "LeonidaGrade": [
+          {
+            "name": "Phase",
+            "type": "vec4",
+            "value": [
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "name": "Params",
+            "type": "vec4",
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "DepthInfo",
+            "type": "vec4",
+            "value": [
+              0.05,
+              1024,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "Haze",
+            "type": "vec4",
+            "value": [
+              0,
+              0,
+              0,
+              0.6
+            ]
+          },
+          {
+            "name": "InvViewProj",
+            "type": "matrix4x4",
+            "value": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "ViewProj",
+            "type": "matrix4x4",
+            "value": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "SunDir",
+            "type": "vec4",
+            "value": [
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "SunColor",
+            "type": "vec4",
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "SkyZenith",
+            "type": "vec4",
+            "value": [
+              0.12,
+              0.34,
+              0.8,
+              1
+            ]
+          },
+          {
+            "name": "SkyHorizon",
+            "type": "vec4",
+            "value": [
+              0.62,
+              0.69,
+              0.78,
+              0
+            ]
+          },
+          {
+            "name": "CloudLit",
+            "type": "vec4",
+            "value": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "name": "CloudShade",
+            "type": "vec4",
+            "value": [
+              0.6,
+              0.6,
+              0.7,
+              0
+            ]
+          },
+          {
+            "name": "CloudGlow",
+            "type": "vec4",
+            "value": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "name": "CameraInfo",
+            "type": "vec4",
+            "value": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "minecraft:post/blit",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "swap"
+        }
+      ],
+      "output": "minecraft:main",
+      "uniforms": {
+        "BlitConfig": [
+          {
+            "name": "ColorModulate",
+            "type": "vec4",
+            "value": [
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

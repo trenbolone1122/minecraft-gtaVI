@@ -1,0 +1,81 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/led_ribbon_warm_white",
+  "t": "leonida:block/look/led_ribbon_warm_white",
+  "b": "leonida:block/look/frame_dark"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    7,
+    15
+   ],
+   "to": [
+    16,
+    9,
+    15.9
+   ],
+   "faces": {
+    "north": {
+     "texture": "#t",
+     "uv": [
+      0,
+      4,
+      16,
+      12
+     ]
+    },
+    "south": {
+     "texture": "#t",
+     "uv": [
+      0,
+      4,
+      16,
+      12
+     ]
+    },
+    "east": {
+     "texture": "#t",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#t",
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#t"
+    },
+    "down": {
+     "texture": "#t"
+    }
+   },
+   "light_emission": 15,
+   "shade": false
+  },
+  {
+   "from": [
+    0,
+    6.5,
+    15.9
+   ],
+   "to": [
+    16,
+    9.5,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#b"
+    },
+    "up": {
+     "texture": "#b"
+    },
+    "down": {
+     "texture": "#b"
+    }
+   }
+  }
+ ]
+}

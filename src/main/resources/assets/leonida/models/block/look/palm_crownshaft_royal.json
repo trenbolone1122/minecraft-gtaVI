@@ -1,0 +1,78 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/palm_crownshaft_royal",
+  "s": "leonida:block/look/palm_crownshaft_royal",
+  "e": "leonida:block/look/palm_trunk_royal_top"
+ },
+ "elements": [
+  {
+   "from": [
+    3.0,
+    0,
+    3.0
+   ],
+   "to": [
+    13.0,
+    16,
+    13.0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#s",
+     "uv": [
+      3.0,
+      0,
+      13.0,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#s",
+     "uv": [
+      3.0,
+      0,
+      13.0,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#s",
+     "uv": [
+      3.0,
+      0,
+      13.0,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#s",
+     "uv": [
+      3.0,
+      0,
+      13.0,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#e",
+     "uv": [
+      3.0,
+      3.0,
+      13.0,
+      13.0
+     ]
+    },
+    "down": {
+     "texture": "#e",
+     "uv": [
+      3.0,
+      3.0,
+      13.0,
+      13.0
+     ]
+    }
+   }
+  }
+ ]
+}

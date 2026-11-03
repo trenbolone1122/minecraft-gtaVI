@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "dev.leonida.aircraft.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "EntityPassengersAccessor",
+    "PlayerPoseMixin"
+  ],
+  "client": [
+    "CameraMixin",
+    "HumanoidRiderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/asphalt"
+   },
+   {
+    "model": "leonida:block/look/asphalt",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/asphalt",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/asphalt",
+    "y": 270
+   }
+  ]
+ }
+}

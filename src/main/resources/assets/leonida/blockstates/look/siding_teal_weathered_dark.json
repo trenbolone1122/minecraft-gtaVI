@@ -1,0 +1,15 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/siding_teal_weathered_dark_0"
+   },
+   {
+    "model": "leonida:block/look/siding_teal_weathered_dark_1"
+   },
+   {
+    "model": "leonida:block/look/siding_teal_weathered_dark_2"
+   }
+  ]
+ }
+}

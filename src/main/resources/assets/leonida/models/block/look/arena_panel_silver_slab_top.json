@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "leonida:block/look/arena_panel_silver",
+  "top": "leonida:block/look/arena_panel_silver",
+  "side": "leonida:block/look/arena_panel_silver"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/ac_unit"
+   },
+   {
+    "model": "leonida:block/look/ac_unit",
+    "y": 90
+   }
+  ]
+ }
+}

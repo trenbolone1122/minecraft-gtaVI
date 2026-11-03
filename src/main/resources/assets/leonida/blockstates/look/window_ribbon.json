@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "glow=auto": {
+   "model": "leonida:block/look/window_ribbon"
+  },
+  "glow=on": {
+   "model": "leonida:block/look/window_ribbon"
+  },
+  "glow=off": {
+   "model": "leonida:block/look/window_ribbon"
+  }
+ }
+}

@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/fence_inventory",
+ "textures": {
+  "texture": "leonida:block/look/weathered_wood",
+  "particle": "leonida:block/look/weathered_wood"
+ }
+}

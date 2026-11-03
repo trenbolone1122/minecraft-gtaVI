@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "glow=auto": {
+   "model": "leonida:block/look/glass_navy"
+  },
+  "glow=on": {
+   "model": "leonida:block/look/glass_navy"
+  },
+  "glow=off": {
+   "model": "leonida:block/look/glass_navy"
+  }
+ }
+}

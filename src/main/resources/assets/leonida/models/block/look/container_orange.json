@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "top": "leonida:block/look/container_orange_top",
+  "side": "leonida:block/look/container_orange_side",
+  "bottom": "leonida:block/look/container_orange_top"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "glow=auto": {
+   "model": "leonida:block/look/glass_graphite"
+  },
+  "glow=on": {
+   "model": "leonida:block/look/glass_graphite"
+  },
+  "glow=off": {
+   "model": "leonida:block/look/glass_graphite"
+  }
+ }
+}

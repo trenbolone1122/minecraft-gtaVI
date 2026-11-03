@@ -1,0 +1,163 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "side": "leonida:block/weapon/ammo_box_side",
+  "lid": "leonida:block/weapon/ammo_box_lid",
+  "inner": "leonida:block/weapon/ammo_box_inner",
+  "rounds": "leonida:block/weapon/ammo_box_rounds",
+  "particle": "leonida:block/weapon/ammo_box_side"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    4
+   ],
+   "to": [
+    15,
+    7,
+    12
+   ],
+   "faces": {
+    "north": {
+     "texture": "#side",
+     "uv": [
+      0,
+      9,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#side",
+     "uv": [
+      0,
+      9,
+      16,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#lid",
+     "uv": [
+      4,
+      9,
+      12,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#lid",
+     "uv": [
+      4,
+      9,
+      12,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#lid",
+     "uv": [
+      1,
+      4,
+      15,
+      12
+     ],
+     "cullface": "down"
+    },
+    "up": {
+     "texture": "#inner",
+     "uv": [
+      1,
+      4,
+      15,
+      12
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    1,
+    5
+   ],
+   "to": [
+    14,
+    6.5,
+    11
+   ],
+   "faces": {
+    "up": {
+     "texture": "#rounds",
+     "uv": [
+      2,
+      5,
+      14,
+      11
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    0.5,
+    7,
+    12
+   ],
+   "to": [
+    15.5,
+    16,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#lid",
+     "uv": [
+      0.5,
+      3.5,
+      15.5,
+      12.5
+     ]
+    },
+    "south": {
+     "texture": "#lid",
+     "uv": [
+      0.5,
+      3.5,
+      15.5,
+      12.5
+     ]
+    },
+    "east": {
+     "texture": "#lid",
+     "uv": [
+      0,
+      0,
+      1,
+      9
+     ]
+    },
+    "west": {
+     "texture": "#lid",
+     "uv": [
+      0,
+      0,
+      1,
+      9
+     ]
+    },
+    "up": {
+     "texture": "#lid",
+     "uv": [
+      0,
+      0,
+      15,
+      1
+     ]
+    }
+   }
+  }
+ ]
+}

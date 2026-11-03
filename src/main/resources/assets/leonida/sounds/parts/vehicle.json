@@ -1,0 +1,128 @@
+{
+  "vehicle.engine_car": {
+    "subtitle": "subtitles.leonida.vehicle.engine",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/engine_car",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.engine_muscle": {
+    "subtitle": "subtitles.leonida.vehicle.engine",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/engine_muscle",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.engine_bike": {
+    "subtitle": "subtitles.leonida.vehicle.engine",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/engine_bike",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.engine_boat": {
+    "subtitle": "subtitles.leonida.vehicle.engine",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/engine_boat",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.horn": {
+    "subtitle": "subtitles.leonida.vehicle.horn",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/horn",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.siren": {
+    "subtitle": "subtitles.leonida.vehicle.siren",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/siren",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.siren_yelp": {
+    "subtitle": "subtitles.leonida.vehicle.siren_yelp",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/siren_yelp",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.alarm": {
+    "subtitle": "subtitles.leonida.vehicle.alarm",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/alarm",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.glass": {
+    "subtitle": "subtitles.leonida.vehicle.glass",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/glass",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.slimjim": {
+    "subtitle": "subtitles.leonida.vehicle.slimjim",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/slimjim",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.crash": {
+    "subtitle": "subtitles.leonida.vehicle.crash",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/crash",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.door": {
+    "subtitle": "subtitles.leonida.vehicle.door",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/door",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.skid": {
+    "subtitle": "subtitles.leonida.vehicle.skid",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/skid",
+        "stream": false
+      }
+    ]
+  },
+  "vehicle.start": {
+    "subtitle": "subtitles.leonida.vehicle.start",
+    "sounds": [
+      {
+        "name": "leonida:vehicle/start",
+        "stream": false
+      }
+    ]
+  }
+}

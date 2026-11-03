@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "glow=auto": {
+   "model": "leonida:block/look/window_cottage"
+  },
+  "glow=on": {
+   "model": "leonida:block/look/window_cottage"
+  },
+  "glow=off": {
+   "model": "leonida:block/look/window_cottage"
+  }
+ }
+}

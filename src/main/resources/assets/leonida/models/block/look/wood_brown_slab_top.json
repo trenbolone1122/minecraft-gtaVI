@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab_top",
+ "textures": {
+  "bottom": "leonida:block/look/wood_brown",
+  "top": "leonida:block/look/wood_brown",
+  "side": "leonida:block/look/wood_brown"
+ }
+}

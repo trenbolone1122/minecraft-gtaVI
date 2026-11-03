@@ -1,0 +1,34 @@
+
+# eclipse
+# fabric
+# gradle
+# idea
+# java
+# macos
+# vscode
+*.DS_Store
+*.hprof
+*.iml
+*.ipr
+*.iws
+*.jfr
+*.launch
+.classpath
+/.gradle/
+.idea/
+.project
+.settings/
+.vscode/
+bin/
+/build/
+classes/
+hs_err_*.log
+out/
+replay_*.log
+/run/
+/test-shots/
+/test-shots-gpu/
+
+# record-trailer.ps1 (portable JDK/ffmpeg, rendered clips)
+tools/.cache/
+trailer-out/

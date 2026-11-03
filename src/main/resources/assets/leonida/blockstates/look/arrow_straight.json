@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "leonida:block/look/arrow_straight"
+  },
+  "facing=east": {
+   "model": "leonida:block/look/arrow_straight",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "leonida:block/look/arrow_straight",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "leonida:block/look/arrow_straight",
+   "y": 270
+  }
+ }
+}

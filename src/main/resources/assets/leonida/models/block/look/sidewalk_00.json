@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/cube_bottom_top",
+ "textures": {
+  "top": "leonida:block/look/sidewalk_00",
+  "side": "leonida:block/look/sidewalk_side",
+  "bottom": "leonida:block/look/sidewalk_side"
+ }
+}

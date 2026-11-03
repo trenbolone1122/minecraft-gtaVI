@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "leonida:block/look/condo_aqua",
+  "top": "leonida:block/look/condo_aqua",
+  "side": "leonida:block/look/condo_aqua"
+ }
+}

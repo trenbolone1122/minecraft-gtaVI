@@ -1,0 +1,19 @@
+{
+  "type": "leonida:world/leonida",
+  "generator": {
+    "type": "leonida:world/leonida",
+    "biome_source": {
+      "type": "leonida:world/leonida",
+      "shallows": "leonida:world/shallows",
+      "bay": "leonida:world/bay",
+      "channel": "leonida:world/channel",
+      "deep": "leonida:world/deep",
+      "swamp": "leonida:world/swamp",
+      "lake": "leonida:world/lake",
+      "ocean": "leonida:world/ocean",
+      "beach": "leonida:world/beach",
+      "land": "leonida:world/land",
+      "city": "leonida:world/city"
+    }
+  }
+}

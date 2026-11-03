@@ -1,0 +1,161 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+repositories {
+	// Add repositories to retrieve artifacts from in here.
+	// You should only use this when depending on other mods because
+	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
+	// for more information about repositories.
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"leonida" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+fabricApi {
+	// Real Minecraft client and server tests in the dev environment (no purchased copy needed).
+	// Client tests: xvfb-run -a ./gradlew runClientGameTest ; screenshots land in build/run/clientGameTest/screenshots
+	configureTests {
+		createSourceSet = true
+		modId = "leonida-gametest"
+		enableGameTests = true
+		enableClientGameTests = true
+		eula = true
+	}
+}
+
+dependencies {
+	// To change the versions see the gradle.properties file
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Shaders: Iris (LGPL-3.0-only) and Sodium (Polyform Shield 1.0.0) ship inside our jar so players install one file.
+	// Licenses and notices: NOTICE.d/shader.md. In dev runs they load only for shader tests or with -PwithShaders,
+	// so other modules' screenshots stay on the vanilla renderer until the full integration pass.
+	include "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	include "maven.modrinth:sodium:mc26.3-0.9.3-beta.1-fabric"
+	include "maven.modrinth:iris:1.11.7+26.3-fabric"
+	// Distant Horizons (LGPL-3.0-only): LOD terrain so the whole city shows from the air. Notice: NOTICE.d/shader.md.
+	include "maven.modrinth:distanthorizons:3.3.4-26.3"
+	if (project.findProperty("leonidaTest") == "shader" || project.hasProperty("withShaders")) {
+		runtimeOnly "maven.modrinth:sodium:mc26.3-0.9.3-beta.1-fabric"
+		runtimeOnly "maven.modrinth:iris:1.11.7+26.3-fabric"
+		runtimeOnly "maven.modrinth:distanthorizons:3.3.4-26.3"
+	}
+}
+
+// Agents write lang and sound entries into per-module part files so nobody edits the same JSON.
+// assets/leonida/lang/parts/<module>.json -> assets/leonida/lang/en_us.json
+// assets/leonida/sounds/parts/<module>.json -> assets/leonida/sounds.json
+def leonidaGen = layout.buildDirectory.dir("generated/leonida-res")
+def leonidaAssets = file("src/main/resources/assets/leonida")
+tasks.register("mergeLeonidaJson") {
+	inputs.files(fileTree(leonidaAssets) { include "lang/parts/**/*.json", "sounds/parts/**/*.json" })
+	outputs.dir(leonidaGen)
+	doLast {
+		def out = leonidaGen.get().asFile
+		[["lang/parts", "lang/en_us.json"], ["sounds/parts", "sounds.json"]].each { pair ->
+			def merged = new TreeMap()
+			def dir = new File(leonidaAssets, pair[0])
+			if (dir.exists()) {
+				dir.eachFileRecurse { f ->
+					if (f.name.endsWith(".json")) {
+						def part = new groovy.json.JsonSlurper().parse(f)
+						part.each { k, v ->
+							if (merged.containsKey(k)) throw new GradleException("duplicate key " + k + " in " + f)
+							merged.put(k, v)
+						}
+					}
+				}
+			}
+			def target = new File(out, "assets/leonida/" + pair[1])
+			target.parentFile.mkdirs()
+			target.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(merged))
+		}
+	}
+}
+sourceSets.main.resources.srcDir(leonidaGen)
+tasks.matching { it.name == "sourcesJar" }.configureEach { dependsOn "mergeLeonidaJson"; duplicatesStrategy = DuplicatesStrategy.EXCLUDE }
+
+processResources {
+	dependsOn "mergeLeonidaJson"
+	exclude "assets/leonida/lang/parts/**", "assets/leonida/sounds/parts/**"
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+}
+
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this line, sources will not be generated.
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	def projectName = project.name
+	inputs.property "projectName", projectName
+
+	from("LICENSE") {
+		rename { "${it}_$projectName"}
+	}
+}
+
+// configure the maven publication
+publishing {
+	publications {
+		create("mavenJava", MavenPublication) {
+			from components.java
+		}
+	}
+
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	repositories {
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
+	}
+}
+
+// tools/pod-test.sh passes -PleonidaTest=<module> so only that module's client tests run.
+tasks.matching { it.name == "runClientGameTest" }.configureEach {
+	if (project.hasProperty("leonidaTest")) {
+		jvmArgs("-Dleonida.test=" + project.property("leonidaTest"))
+	}
+}

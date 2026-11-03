@@ -1,0 +1,44 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/trim_white",
+  "t": "leonida:block/look/trim_white"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    13,
+    6
+   ],
+   "to": [
+    16,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#t"
+    },
+    "south": {
+     "texture": "#t",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#t",
+     "cullface": "east"
+    },
+    "west": {
+     "texture": "#t",
+     "cullface": "west"
+    },
+    "up": {
+     "texture": "#t"
+    },
+    "down": {
+     "texture": "#t"
+    }
+   }
+  }
+ ]
+}

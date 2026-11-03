@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/palm_trunk_sabal"
+   },
+   {
+    "model": "leonida:block/look/palm_trunk_sabal",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/palm_trunk_sabal",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/palm_trunk_sabal",
+    "y": 270
+   }
+  ]
+ }
+}

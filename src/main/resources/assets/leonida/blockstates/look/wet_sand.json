@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/wet_sand"
+   },
+   {
+    "model": "leonida:block/look/wet_sand",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/wet_sand",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/wet_sand",
+    "y": 270
+   }
+  ]
+ }
+}

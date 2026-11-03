@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "leonida:block/look/trim_white_peeling",
+  "top": "leonida:block/look/trim_white_peeling",
+  "side": "leonida:block/look/trim_white_peeling"
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "leonida:block/character/wardrobe" },
+    "facing=east": { "model": "leonida:block/character/wardrobe", "y": 90 },
+    "facing=south": { "model": "leonida:block/character/wardrobe", "y": 180 },
+    "facing=west": { "model": "leonida:block/character/wardrobe", "y": 270 }
+  }
+}

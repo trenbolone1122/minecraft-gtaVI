@@ -1,0 +1,112 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/fridge_white_side",
+  "f": "leonida:block/look/fridge_white_front_lower",
+  "s": "leonida:block/look/fridge_white_side",
+  "t": "leonida:block/look/fridge_white_top",
+  "h": "leonida:block/look/fridge_white_side"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    2
+   ],
+   "to": [
+    15,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#f",
+     "uv": [
+      1,
+      0,
+      15,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#s",
+     "uv": [
+      1,
+      0,
+      15,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#s",
+     "uv": [
+      0,
+      0,
+      14,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#s",
+     "uv": [
+      2,
+      0,
+      16,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#t",
+     "uv": [
+      1,
+      2,
+      15,
+      16
+     ]
+    },
+    "down": {
+     "texture": "#s",
+     "uv": [
+      1,
+      2,
+      15,
+      16
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    12.5,
+    3,
+    1
+   ],
+   "to": [
+    13.5,
+    15,
+    2
+   ],
+   "faces": {
+    "north": {
+     "texture": "#h"
+    },
+    "south": {
+     "texture": "#h"
+    },
+    "east": {
+     "texture": "#h"
+    },
+    "west": {
+     "texture": "#h"
+    },
+    "up": {
+     "texture": "#h"
+    },
+    "down": {
+     "texture": "#h"
+    }
+   }
+  }
+ ]
+}

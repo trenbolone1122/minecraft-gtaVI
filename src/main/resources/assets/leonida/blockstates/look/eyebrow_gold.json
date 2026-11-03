@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "leonida:block/look/eyebrow_gold"
+  },
+  "facing=east": {
+   "model": "leonida:block/look/eyebrow_gold",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "leonida:block/look/eyebrow_gold",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "leonida:block/look/eyebrow_gold",
+   "y": 270
+  }
+ }
+}

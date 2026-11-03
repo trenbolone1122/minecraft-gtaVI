@@ -1,0 +1,271 @@
+{
+ "_comment": "Parked aircraft spawn points. x, z are block coordinates (x = map x, z = -map y) of the landmark from community-world-v1 landmarks.json; the spawner searches up to 64 blocks around for clear flat ground or open water.",
+ "points": [
+  {
+   "id": "vcia_fbo_1",
+   "landmark": "Autograph Hangar 1",
+   "kind": "apron",
+   "aircraft": [
+    "shamal"
+   ],
+   "count": 1,
+   "x": -2604,
+   "z": 75,
+   "tags": [
+    "l1",
+    "transportation"
+   ]
+  },
+  {
+   "id": "vcia_fbo_2",
+   "landmark": "Autograph Hangar 2",
+   "kind": "apron",
+   "aircraft": [
+    "shamal",
+    "dodo"
+   ],
+   "count": 2,
+   "x": -2508,
+   "z": 92,
+   "tags": [
+    "l1",
+    "transportation"
+   ]
+  },
+  {
+   "id": "vcia_tower",
+   "landmark": "VCIA Control Tower",
+   "kind": "apron",
+   "aircraft": [
+    "maverick"
+   ],
+   "count": 1,
+   "x": -2373,
+   "z": 774,
+   "tags": [
+    "#airport",
+    "transportation"
+   ]
+  },
+  {
+   "id": "vcia_allied_air",
+   "landmark": "Allied Air Hangar",
+   "kind": "apron",
+   "aircraft": [
+    "western_duster",
+    "maverick"
+   ],
+   "count": 2,
+   "x": -2146,
+   "z": 536,
+   "tags": [
+    "l1"
+   ]
+  },
+  {
+   "id": "brians_marina",
+   "landmark": "Brian's Boat Works & Marina",
+   "kind": "water",
+   "aircraft": [
+    "floatplane"
+   ],
+   "count": 1,
+   "x": -2555,
+   "z": 5859,
+   "tags": [
+    "#marina",
+    "@brian",
+    "enterable",
+    "transportation"
+   ]
+  },
+  {
+   "id": "islamarina",
+   "landmark": "IslaMarina",
+   "kind": "water",
+   "aircraft": [
+    "dodo"
+   ],
+   "count": 1,
+   "x": -3322,
+   "z": 6649,
+   "tags": [
+    "#marina",
+    "transportation"
+   ]
+  },
+  {
+   "id": "watson_seaplane_base",
+   "landmark": "Miami Seaplane Base",
+   "kind": "water",
+   "aircraft": [
+    "dodo",
+    "floatplane"
+   ],
+   "count": 2,
+   "x": 182,
+   "z": -181,
+   "tags": [
+    "demolished"
+   ]
+  },
+  {
+   "id": "sundown_airfield",
+   "landmark": "Sundown Private Airfield",
+   "kind": "airfield",
+   "aircraft": [
+    "western_duster"
+   ],
+   "count": 1,
+   "x": -817,
+   "z": -4360,
+   "tags": [
+    "#airport",
+    "l7",
+    "transportation"
+   ]
+  },
+  {
+   "id": "ltf_airfield",
+   "landmark": "LTF Airfield",
+   "kind": "airfield",
+   "aircraft": [
+    "western_duster",
+    "floatplane"
+   ],
+   "count": 2,
+   "x": -2776,
+   "z": 4421,
+   "tags": [
+    "#airport",
+    "transportation",
+    "unconfirmed"
+   ]
+  },
+  {
+   "id": "watson_bay_airport",
+   "landmark": "Watson Bay Airport",
+   "kind": "airfield",
+   "aircraft": [
+    "western_duster",
+    "shamal"
+   ],
+   "count": 2,
+   "x": -5911,
+   "z": 2472,
+   "tags": [
+    "#airport"
+   ]
+  },
+  {
+   "id": "vice_beach_pd",
+   "landmark": "Vice Beach Police Department",
+   "kind": "helipad",
+   "aircraft": [
+    "police_maverick"
+   ],
+   "count": 1,
+   "x": 1495,
+   "z": -400,
+   "tags": [
+    "enterable",
+    "government"
+   ]
+  },
+  {
+   "id": "crosstown_pd",
+   "landmark": "City of Miami Police Department",
+   "kind": "helipad",
+   "aircraft": [
+    "police_maverick"
+   ],
+   "count": 1,
+   "x": -772,
+   "z": -782,
+   "tags": [
+    "l4"
+   ]
+  },
+  {
+   "id": "waning_sands_pd",
+   "landmark": "Waning Sands Police Department",
+   "kind": "helipad",
+   "aircraft": [
+    "buzzard"
+   ],
+   "count": 1,
+   "x": 144,
+   "z": -4109,
+   "tags": [
+    "#police",
+    "enterable",
+    "government",
+    "l7"
+   ]
+  },
+  {
+   "id": "ambrosia_pd",
+   "landmark": "Ambrosia Police Department",
+   "kind": "helipad",
+   "aircraft": [
+    "buzzard"
+   ],
+   "count": 1,
+   "x": -2839,
+   "z": -4266,
+   "tags": [
+    "#police",
+    "government"
+   ]
+  },
+  {
+   "id": "port_gellhorn_pd",
+   "landmark": "Parker Police Station",
+   "kind": "helipad",
+   "aircraft": [
+    "police_maverick"
+   ],
+   "count": 1,
+   "x": -6210,
+   "z": -3055,
+   "tags": [
+    "#police",
+    "government",
+    "l1"
+   ]
+  },
+  {
+   "id": "rockridge_hospital",
+   "landmark": "Hospital",
+   "kind": "helipad",
+   "aircraft": [
+    "maverick"
+   ],
+   "count": 1,
+   "x": -1047,
+   "z": -908,
+   "tags": [
+    "#hospital",
+    "l6",
+    "public",
+    "unconfirmed"
+   ]
+  },
+  {
+   "id": "vice_beach_marina",
+   "landmark": "Vice Beach Marina",
+   "kind": "helipad",
+   "aircraft": [
+    "news_maverick"
+   ],
+   "count": 1,
+   "x": 1357,
+   "z": 112,
+   "tags": [
+    "#marina",
+    "l1",
+    "transportation"
+   ]
+  }
+ ]
+}

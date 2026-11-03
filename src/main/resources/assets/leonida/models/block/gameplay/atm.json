@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "leonida:block/gameplay/atm_front",
+    "side": "leonida:block/gameplay/atm_side",
+    "top": "leonida:block/gameplay/atm_top",
+    "particle": "leonida:block/gameplay/atm_side"
+  }
+}

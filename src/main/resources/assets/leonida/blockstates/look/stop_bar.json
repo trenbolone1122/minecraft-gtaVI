@@ -1,0 +1,11 @@
+{
+ "variants": {
+  "axis=z": {
+   "model": "leonida:block/look/stop_bar"
+  },
+  "axis=x": {
+   "model": "leonida:block/look/stop_bar",
+   "y": 90
+  }
+ }
+}

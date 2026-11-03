@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "leonida:block/look/weathered_wood"
+  },
+  "axis=x": {
+   "model": "leonida:block/look/weathered_wood_horizontal",
+   "x": 90,
+   "y": 90
+  },
+  "axis=z": {
+   "model": "leonida:block/look/weathered_wood_horizontal",
+   "x": 90
+  }
+ }
+}

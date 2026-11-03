@@ -1,0 +1,264 @@
+{
+ "weapon.pistol_fire": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/pistol_fire"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.pistol_fire"
+ },
+ "weapon.smg_fire": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/smg_fire"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.smg_fire"
+ },
+ "weapon.rifle_fire": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/rifle_fire"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.rifle_fire"
+ },
+ "weapon.shotgun_fire": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/shotgun_fire"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.shotgun_fire"
+ },
+ "weapon.sniper_fire": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/sniper_fire"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.sniper_fire"
+ },
+ "weapon.rpg_fire": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/rpg_fire"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.rpg_fire"
+ },
+ "weapon.mag_out": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/mag_out"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.mag_out"
+ },
+ "weapon.mag_in": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/mag_in"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.mag_in"
+ },
+ "weapon.pistol_mag_out": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/pistol_mag_out"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.pistol_mag_out"
+ },
+ "weapon.pistol_mag_in": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/pistol_mag_in"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.pistol_mag_in"
+ },
+ "weapon.charge": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/charge"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.charge"
+ },
+ "weapon.pump": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/pump"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.pump"
+ },
+ "weapon.shell": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/shell"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.shell"
+ },
+ "weapon.bolt": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/bolt"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.bolt"
+ },
+ "weapon.rocket_in": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/rocket_in"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.rocket_in"
+ },
+ "weapon.empty": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/empty"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.empty"
+ },
+ "weapon.equip": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/equip"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.equip"
+ },
+ "weapon.hit_entity": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/hit_entity"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.hit_entity"
+ },
+ "weapon.hit_stone": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/hit_stone1"
+   },
+   {
+    "name": "leonida:weapon/hit_stone2"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.hit_stone"
+ },
+ "weapon.hit_metal": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/hit_metal1"
+   },
+   {
+    "name": "leonida:weapon/hit_metal2"
+   },
+   {
+    "name": "leonida:weapon/hit_metal3"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.hit_metal"
+ },
+ "weapon.hit_wood": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/hit_wood1"
+   },
+   {
+    "name": "leonida:weapon/hit_wood2"
+   },
+   {
+    "name": "leonida:weapon/hit_wood3"
+   },
+   {
+    "name": "leonida:weapon/hit_wood4"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.hit_wood"
+ },
+ "weapon.explosion_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/explosion_far"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.explosion_far"
+ },
+ "weapon.pistol_fire_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/pistol_fire_far",
+    "attenuation_distance": 24
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.fire_far"
+ },
+ "weapon.smg_fire_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/smg_fire_far",
+    "attenuation_distance": 24
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.fire_far"
+ },
+ "weapon.rifle_fire_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/rifle_fire_far",
+    "attenuation_distance": 24
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.fire_far"
+ },
+ "weapon.shotgun_fire_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/shotgun_fire_far",
+    "attenuation_distance": 24
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.fire_far"
+ },
+ "weapon.sniper_fire_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/sniper_fire_far",
+    "attenuation_distance": 24
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.fire_far"
+ },
+ "weapon.rpg_fire_far": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/rpg_fire_far",
+    "attenuation_distance": 24
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.fire_far"
+ },
+ "weapon.casing": {
+  "sounds": [
+   {
+    "name": "leonida:weapon/casing1"
+   },
+   {
+    "name": "leonida:weapon/casing2"
+   },
+   {
+    "name": "leonida:weapon/casing3"
+   }
+  ],
+  "subtitle": "subtitles.leonida.weapon.casing"
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/slab",
+ "textures": {
+  "bottom": "leonida:block/look/condo_cream",
+  "top": "leonida:block/look/condo_cream",
+  "side": "leonida:block/look/condo_cream"
+ }
+}

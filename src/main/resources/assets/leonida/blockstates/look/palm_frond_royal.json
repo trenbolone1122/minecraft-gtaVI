@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "diagonal=false,facing=north": {
+   "model": "leonida:block/look/palm_frond_royal"
+  },
+  "diagonal=true,facing=north": {
+   "model": "leonida:block/look/palm_frond_royal_diagonal"
+  },
+  "diagonal=false,facing=east": {
+   "model": "leonida:block/look/palm_frond_royal",
+   "y": 90
+  },
+  "diagonal=true,facing=east": {
+   "model": "leonida:block/look/palm_frond_royal_diagonal",
+   "y": 90
+  },
+  "diagonal=false,facing=south": {
+   "model": "leonida:block/look/palm_frond_royal",
+   "y": 180
+  },
+  "diagonal=true,facing=south": {
+   "model": "leonida:block/look/palm_frond_royal_diagonal",
+   "y": 180
+  },
+  "diagonal=false,facing=west": {
+   "model": "leonida:block/look/palm_frond_royal",
+   "y": 270
+  },
+  "diagonal=true,facing=west": {
+   "model": "leonida:block/look/palm_frond_royal_diagonal",
+   "y": 270
+  }
+ }
+}

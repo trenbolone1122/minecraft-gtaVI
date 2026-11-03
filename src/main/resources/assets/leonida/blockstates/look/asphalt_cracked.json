@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/asphalt_cracked"
+   },
+   {
+    "model": "leonida:block/look/asphalt_cracked",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/asphalt_cracked",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/asphalt_cracked",
+    "y": 270
+   }
+  ]
+ }
+}

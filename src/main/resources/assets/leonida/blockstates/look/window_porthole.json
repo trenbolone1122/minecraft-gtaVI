@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "glow=auto": {
+   "model": "leonida:block/look/window_porthole"
+  },
+  "glow=on": {
+   "model": "leonida:block/look/window_porthole"
+  },
+  "glow=off": {
+   "model": "leonida:block/look/window_porthole"
+  }
+ }
+}

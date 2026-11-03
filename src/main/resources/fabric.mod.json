@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "leonida",
+  "version": "${version}",
+  "name": "Leonida",
+  "description": "Leonida in Minecraft: the map, interiors, two playable leads, cars, police and a GTA style HUD in one mod. Fan project, not affiliated with the devs of the game it parodies.",
+  "authors": [
+    "trenbolone1122"
+  ],
+  "contact": {},
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/leonida/icon.png",
+  "environment": "*",
+  "languageAdapters": {
+    "leonida_shader_guard": "dev.leonida.shader.early.ShaderEarlyAdapter"
+  },
+  "entrypoints": {
+    "main": [
+      "dev.leonida.LeonidaMod"
+    ],
+    "client": [
+      "dev.leonida.LeonidaClient"
+    ],
+    "preLaunch": [
+      "dev.leonida.shader.ShaderPreLaunch"
+    ]
+  },
+  "mixins": [
+    "leonida.mixins.json",
+    {
+      "config": "leonida.client.mixins.json",
+      "environment": "client"
+    },
+    "leonida.world.mixins.json",
+    "leonida.build.mixins.json",
+    "leonida.character.mixins.json",
+    "leonida.vehicle.mixins.json",
+    "leonida.aircraft.mixins.json",
+    "leonida.gameplay.mixins.json",
+    "leonida.weapon.mixins.json",
+    "leonida.hud.mixins.json",
+    "leonida.fx.mixins.json",
+    "leonida.look.mixins.json",
+    "leonida.road.mixins.json",
+    "leonida.landmark.mixins.json",
+    "leonida.vicecity.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

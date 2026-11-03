@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "glow=auto": {
+   "model": "leonida:block/look/window_clerestory"
+  },
+  "glow=on": {
+   "model": "leonida:block/look/window_clerestory"
+  },
+  "glow=off": {
+   "model": "leonida:block/look/window_clerestory"
+  }
+ }
+}

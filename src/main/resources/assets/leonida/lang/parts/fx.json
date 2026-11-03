@@ -1,0 +1,12 @@
+{
+  "leonida.fx.command.quality": "Leonida graphics: %s",
+  "leonida.fx.command.quality.invalid": "Use off, low, medium or high",
+  "leonida.fx.command.grade": "Leonida colour grade: %s%%",
+  "leonida.fx.command.mining.on": "Mining debris on",
+  "leonida.fx.command.mining.off": "Mining debris off",
+  "leonida.fx.command.clear": "Cleared debris and ragdolls",
+  "leonida.fx.quality.off": "off",
+  "leonida.fx.quality.low": "low",
+  "leonida.fx.quality.medium": "medium",
+  "leonida.fx.quality.high": "high"
+}

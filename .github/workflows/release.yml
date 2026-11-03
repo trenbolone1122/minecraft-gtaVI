@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag to release (for example v0.1.0)
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v6
+      - name: Build the mod jar
+        run: ./gradlew build --no-daemon --console=plain
+      - name: Build the Modrinth pack (.mrpack)
+        run: |
+          TAG="${{ github.event.inputs.tag || github.ref_name }}"
+          MC=$(grep '^minecraft_version=' gradle.properties | cut -d= -f2)
+          LOADER=$(grep '^loader_version=' gradle.properties | cut -d= -f2)
+          mkdir -p pack/overrides/mods
+          cp $(ls build/libs/leonida-*.jar | grep -v -- -sources) pack/overrides/mods/
+          printf '{"formatVersion":1,"game":"minecraft","versionId":"%s","name":"Leonida","summary":"Leonida world, roads, landmarks, vehicles and shaders for Fabric","files":[],"dependencies":{"minecraft":"%s","fabric-loader":"%s"}}' "$TAG" "$MC" "$LOADER" > pack/modrinth.index.json
+          (cd pack && zip -r "../build/libs/Leonida-$TAG.mrpack" modrinth.index.json overrides)
+      - name: Publish the release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          name: Leonida ${{ github.event.inputs.tag || github.ref_name }}
+          generate_release_notes: true
+          files: |
+            build/libs/leonida-*.jar
+            build/libs/Leonida-*.mrpack

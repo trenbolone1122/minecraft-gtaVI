@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "leonida:block/look/fridge_white_front_upper"
+ }
+}

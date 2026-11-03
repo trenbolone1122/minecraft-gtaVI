@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "leonida:block/look/speed_line_coral"
+  },
+  "facing=east": {
+   "model": "leonida:block/look/speed_line_coral",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "leonida:block/look/speed_line_coral",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "leonida:block/look/speed_line_coral",
+   "y": 270
+  }
+ }
+}

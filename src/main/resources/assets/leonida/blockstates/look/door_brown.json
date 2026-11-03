@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "half=lower": {
+   "model": "leonida:block/look/door_brown_lower"
+  },
+  "half=upper": {
+   "model": "leonida:block/look/door_brown_upper"
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "variants": {
+  "facing=north": [
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_0"
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_1"
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_2"
+   }
+  ],
+  "facing=east": [
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_0",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_1",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_2",
+    "y": 90
+   }
+  ],
+  "facing=south": [
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_0",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_1",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_2",
+    "y": 180
+   }
+  ],
+  "facing=west": [
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_0",
+    "y": 270
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_1",
+    "y": 270
+   },
+   {
+    "model": "leonida:block/look/siding_teal_lined_faded_2",
+    "y": 270
+   }
+  ]
+ }
+}

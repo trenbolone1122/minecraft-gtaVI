@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/stairs",
+ "textures": {
+  "bottom": "leonida:block/look/weathered_wood",
+  "top": "leonida:block/look/weathered_wood",
+  "side": "leonida:block/look/weathered_wood"
+ }
+}

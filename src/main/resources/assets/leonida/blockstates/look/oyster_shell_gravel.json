@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/oyster_shell_gravel"
+   },
+   {
+    "model": "leonida:block/look/oyster_shell_gravel",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/oyster_shell_gravel",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/oyster_shell_gravel",
+    "y": 270
+   }
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/tarp_blue"
+   },
+   {
+    "model": "leonida:block/look/tarp_blue",
+    "y": 90
+   }
+  ]
+ }
+}

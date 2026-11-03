@@ -1,0 +1,26 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/accent_gold",
+  "t": "leonida:block/look/speed_line_gold"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    15.6
+   ],
+   "to": [
+    16,
+    16,
+    15.6
+   ],
+   "faces": {
+    "north": {
+     "texture": "#t"
+    }
+   }
+  }
+ ]
+}

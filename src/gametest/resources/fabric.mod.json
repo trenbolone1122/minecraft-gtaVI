@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "leonida-gametest",
+  "version": "1.0.0",
+  "name": "Leonida game tests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-client-gametest": [
+      "dev.leonida.test.SmokeClientTest",
+      "dev.leonida.test.world.WorldClientTest",
+      "dev.leonida.test.build.BuildClientTest",
+      "dev.leonida.test.character.CharacterClientTest",
+      "dev.leonida.test.vehicle.VehicleClientTest",
+      "dev.leonida.test.aircraft.AircraftClientTest",
+      "dev.leonida.test.gameplay.GameplayClientTest",
+      "dev.leonida.test.weapon.WeaponClientTest",
+      "dev.leonida.test.hud.HudClientTest",
+      "dev.leonida.test.hud.SettingsClientTest",
+      "dev.leonida.test.fx.FxClientTest",
+      "dev.leonida.test.look.LookClientTest",
+      "dev.leonida.test.shader.ShaderClientTest",
+      "dev.leonida.test.road.RoadClientTest",
+      "dev.leonida.test.landmark.LandmarkClientTest",
+      "dev.leonida.test.vicecity.VicecityClientTest"
+    ]
+  },
+  "depends": {
+    "leonida": "*"
+  }
+}

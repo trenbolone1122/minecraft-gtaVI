@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "leonida:block/look/hose_reel"
+  },
+  "facing=east": {
+   "model": "leonida:block/look/hose_reel",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "leonida:block/look/hose_reel",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "leonida:block/look/hose_reel",
+   "y": 270
+  }
+ }
+}

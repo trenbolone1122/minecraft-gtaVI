@@ -1,0 +1,9 @@
+{
+  "entity.leonida.gameplay.pedestrian": "Leonida Local",
+  "entity.leonida.gameplay.clerk": "Store Clerk",
+  "entity.leonida.gameplay.police_officer": "Leonida Police Officer",
+  "item.leonida.gameplay.phone": "Phone",
+  "item.leonida.gameplay.cash": "Cash",
+  "block.leonida.gameplay.atm": "ATM",
+  "block.leonida.gameplay.register": "Cash Register"
+}

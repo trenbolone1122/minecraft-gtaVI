@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/palm_crownshaft_royal"
+   },
+   {
+    "model": "leonida:block/look/palm_crownshaft_royal",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/palm_crownshaft_royal",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/palm_crownshaft_royal",
+    "y": 270
+   }
+  ]
+ }
+}

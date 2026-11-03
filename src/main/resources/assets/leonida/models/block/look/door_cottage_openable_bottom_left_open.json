@@ -1,0 +1,7 @@
+{
+ "parent": "minecraft:block/door_bottom_left_open",
+ "textures": {
+  "bottom": "leonida:block/look/door_cottage_lower",
+  "top": "leonida:block/look/door_cottage_upper"
+ }
+}

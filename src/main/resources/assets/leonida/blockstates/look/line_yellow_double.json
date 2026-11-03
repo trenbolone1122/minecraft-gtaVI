@@ -1,0 +1,11 @@
+{
+ "variants": {
+  "axis=z": {
+   "model": "leonida:block/look/line_yellow_double"
+  },
+  "axis=x": {
+   "model": "leonida:block/look/line_yellow_double",
+   "y": 90
+  }
+ }
+}

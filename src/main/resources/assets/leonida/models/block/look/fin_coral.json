@@ -1,0 +1,44 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/accent_coral",
+  "t": "leonida:block/look/accent_coral"
+ },
+ "elements": [
+  {
+   "from": [
+    6,
+    0,
+    0
+   ],
+   "to": [
+    10,
+    16,
+    16
+   ],
+   "faces": {
+    "north": {
+     "texture": "#t"
+    },
+    "south": {
+     "texture": "#t",
+     "cullface": "south"
+    },
+    "east": {
+     "texture": "#t"
+    },
+    "west": {
+     "texture": "#t"
+    },
+    "up": {
+     "texture": "#t",
+     "cullface": "up"
+    },
+    "down": {
+     "texture": "#t",
+     "cullface": "down"
+    }
+   }
+  }
+ ]
+}

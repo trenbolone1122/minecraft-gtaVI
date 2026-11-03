@@ -1,0 +1,9 @@
+{
+ "parent": "minecraft:block/stairs",
+ "textures": {
+  "bottom": "leonida:block/look/concrete",
+  "top": "leonida:block/look/stadium_seat_grey",
+  "side": "leonida:block/look/stadium_seat_grey",
+  "particle": "leonida:block/look/stadium_seat_grey"
+ }
+}

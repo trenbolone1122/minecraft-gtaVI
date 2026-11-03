@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "type=bottom": {
+   "model": "leonida:block/look/arena_panel_silver_slab"
+  },
+  "type=top": {
+   "model": "leonida:block/look/arena_panel_silver_slab_top"
+  },
+  "type=double": {
+   "model": "leonida:block/look/arena_panel_silver"
+  }
+ }
+}

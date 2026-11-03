@@ -1,0 +1,85 @@
+{
+ "variants": {
+  "jx=0,jz=0,type=bottom": {
+   "model": "leonida:block/look/sidewalk_00_slab"
+  },
+  "jx=0,jz=0,type=top": {
+   "model": "leonida:block/look/sidewalk_00_slab_top"
+  },
+  "jx=0,jz=0,type=double": {
+   "model": "leonida:block/look/sidewalk_00"
+  },
+  "jx=0,jz=1,type=bottom": {
+   "model": "leonida:block/look/sidewalk_01_slab"
+  },
+  "jx=0,jz=1,type=top": {
+   "model": "leonida:block/look/sidewalk_01_slab_top"
+  },
+  "jx=0,jz=1,type=double": {
+   "model": "leonida:block/look/sidewalk_01"
+  },
+  "jx=0,jz=2,type=bottom": {
+   "model": "leonida:block/look/sidewalk_02_slab"
+  },
+  "jx=0,jz=2,type=top": {
+   "model": "leonida:block/look/sidewalk_02_slab_top"
+  },
+  "jx=0,jz=2,type=double": {
+   "model": "leonida:block/look/sidewalk_02"
+  },
+  "jx=1,jz=0,type=bottom": {
+   "model": "leonida:block/look/sidewalk_10_slab"
+  },
+  "jx=1,jz=0,type=top": {
+   "model": "leonida:block/look/sidewalk_10_slab_top"
+  },
+  "jx=1,jz=0,type=double": {
+   "model": "leonida:block/look/sidewalk_10"
+  },
+  "jx=1,jz=1,type=bottom": {
+   "model": "leonida:block/look/sidewalk_11_slab"
+  },
+  "jx=1,jz=1,type=top": {
+   "model": "leonida:block/look/sidewalk_11_slab_top"
+  },
+  "jx=1,jz=1,type=double": {
+   "model": "leonida:block/look/sidewalk_11"
+  },
+  "jx=1,jz=2,type=bottom": {
+   "model": "leonida:block/look/sidewalk_12_slab"
+  },
+  "jx=1,jz=2,type=top": {
+   "model": "leonida:block/look/sidewalk_12_slab_top"
+  },
+  "jx=1,jz=2,type=double": {
+   "model": "leonida:block/look/sidewalk_12"
+  },
+  "jx=2,jz=0,type=bottom": {
+   "model": "leonida:block/look/sidewalk_20_slab"
+  },
+  "jx=2,jz=0,type=top": {
+   "model": "leonida:block/look/sidewalk_20_slab_top"
+  },
+  "jx=2,jz=0,type=double": {
+   "model": "leonida:block/look/sidewalk_20"
+  },
+  "jx=2,jz=1,type=bottom": {
+   "model": "leonida:block/look/sidewalk_21_slab"
+  },
+  "jx=2,jz=1,type=top": {
+   "model": "leonida:block/look/sidewalk_21_slab_top"
+  },
+  "jx=2,jz=1,type=double": {
+   "model": "leonida:block/look/sidewalk_21"
+  },
+  "jx=2,jz=2,type=bottom": {
+   "model": "leonida:block/look/sidewalk_22_slab"
+  },
+  "jx=2,jz=2,type=top": {
+   "model": "leonida:block/look/sidewalk_22_slab_top"
+  },
+  "jx=2,jz=2,type=double": {
+   "model": "leonida:block/look/sidewalk_22"
+  }
+ }
+}

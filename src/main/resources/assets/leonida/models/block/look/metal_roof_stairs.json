@@ -1,0 +1,8 @@
+{
+ "parent": "minecraft:block/stairs",
+ "textures": {
+  "bottom": "leonida:block/look/metal_roof",
+  "top": "leonida:block/look/metal_roof",
+  "side": "leonida:block/look/metal_roof"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/bucket_white"
+   },
+   {
+    "model": "leonida:block/look/bucket_white",
+    "y": 90
+   }
+  ]
+ }
+}

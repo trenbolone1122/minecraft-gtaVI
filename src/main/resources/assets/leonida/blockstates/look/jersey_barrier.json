@@ -1,0 +1,11 @@
+{
+ "variants": {
+  "axis=z": {
+   "model": "leonida:block/look/jersey_barrier"
+  },
+  "axis=x": {
+   "model": "leonida:block/look/jersey_barrier",
+   "y": 90
+  }
+ }
+}

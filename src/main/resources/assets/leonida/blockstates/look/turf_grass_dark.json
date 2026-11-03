@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/turf_grass_dark"
+   },
+   {
+    "model": "leonida:block/look/turf_grass_dark",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/turf_grass_dark",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/turf_grass_dark",
+    "y": 270
+   }
+  ]
+ }
+}

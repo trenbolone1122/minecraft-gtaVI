@@ -1,0 +1,78 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "leonida:block/look/palm_trunk_sabal",
+  "s": "leonida:block/look/palm_trunk_sabal",
+  "e": "leonida:block/look/palm_trunk_sabal_top"
+ },
+ "elements": [
+  {
+   "from": [
+    2.0,
+    0,
+    2.0
+   ],
+   "to": [
+    14.0,
+    16,
+    14.0
+   ],
+   "faces": {
+    "north": {
+     "texture": "#s",
+     "uv": [
+      2.0,
+      0,
+      14.0,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#s",
+     "uv": [
+      2.0,
+      0,
+      14.0,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#s",
+     "uv": [
+      2.0,
+      0,
+      14.0,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#s",
+     "uv": [
+      2.0,
+      0,
+      14.0,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#e",
+     "uv": [
+      2.0,
+      2.0,
+      14.0,
+      14.0
+     ]
+    },
+    "down": {
+     "texture": "#e",
+     "uv": [
+      2.0,
+      2.0,
+      14.0,
+      14.0
+     ]
+    }
+   }
+  }
+ ]
+}

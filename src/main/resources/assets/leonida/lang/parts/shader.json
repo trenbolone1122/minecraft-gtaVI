@@ -1,0 +1,4 @@
+{
+  "leonida.shader.pack_name": "Leonida Shaders",
+  "leonida.shader.no_opengl": "Leonida Shaders are off: OpenGL could not start on this PC, so Minecraft is running on Vulkan. Update your graphics drivers to get the shaders."
+}

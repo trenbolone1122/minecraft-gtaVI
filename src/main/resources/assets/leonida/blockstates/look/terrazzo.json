@@ -1,0 +1,21 @@
+{
+ "variants": {
+  "": [
+   {
+    "model": "leonida:block/look/terrazzo"
+   },
+   {
+    "model": "leonida:block/look/terrazzo",
+    "y": 90
+   },
+   {
+    "model": "leonida:block/look/terrazzo",
+    "y": 180
+   },
+   {
+    "model": "leonida:block/look/terrazzo",
+    "y": 270
+   }
+  ]
+ }
+}
